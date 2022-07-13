@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            justify-content: center;
+            overflow-x: hidden;
+
+        }
+        img{
+            height: 250px;
+            width: 370px;
+            margin: 10px;
+            border-radius: 3px;
+        }
+        #result{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            margin-left: -155px;
+            margin-top: 25px;
+        }
+        input{
+            width: 70vw !important;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center py-4">Image Search Application</h1>
+        <div class="form-group">
+            <input type="text" name="" id="search" placeholder="Search Images" class="form-control" autocomplete="off">
+        </div><br>
+        <div class="form-group">
+            <button class="btn btn-success" id="button">Search Images</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script>
+       $("button").click(function(event){
+            event.preventDefault()
+            $("#result").empty()
+            var search=$("#search").val()
+            var url="https://api.unsplash.com/search/photos?query="+search+"&client_id=VY_v46GYcrRYGZU_8mstLeA6-o07C3i6UuB4EmSqeNQ&per_page=30"
+
+            $.ajax({
+                method: 'GET',
+                url: url,
+                success:function(data){
+                    console.log(data)
+
+                    data.results.forEach(photo => {
+                    $("#result").append(`
+                        <img src="${photo.urls.small}" />
+                    `)
+                });
+                }
+            })
+        })
+    </script>
+</body>
+</html>
