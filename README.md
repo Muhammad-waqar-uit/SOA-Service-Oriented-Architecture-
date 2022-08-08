@@ -1,7 +1,11 @@
 # SOA-Service-Oriented-Architecture-
 Using different API to work on SOA (How API works)
-<h2>API WEBSITE</h2>
-<p>open weather website: https://openweathermap.org/ </p>
+<h2>API WEBSITE (5 API's)</h2>
+<p>1)open weather website: https://openweathermap.org/ </p> <br>
+<p>2) Unsplash api website: https://unsplash.com/developers </p> <br>
+<p>3) Github Api website: https://docs.github.com/en/rest </p><br>
+<p>4) The Movie DB website: https://developers.themoviedb.org/3/getting-started/introduction </p><br>
+<p>5) Dads Joke Website: https://icanhazdadjoke.com/api </p><br>
 <h2>Project technologies</h2>
 <p align="center">
    <a href="https://www.W3schools.com/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="100" height="100"/></a>
