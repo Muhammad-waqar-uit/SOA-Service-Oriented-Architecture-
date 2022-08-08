@@ -1,6 +1,7 @@
 # SOA-Service-Oriented-Architecture-
 Using different API to work on SOA (How API works)
-
+<h2>API WEBSITE</h2>
+<p>open weather website: https://openweathermap.org/ </p>
 <h2>Project technologies</h2>
 <p align="center">
    <a href="https://www.W3schools.com/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="100" height="100"/></a>
