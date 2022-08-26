@@ -29,3 +29,5 @@ Using different API to work on SOA (How API works)
    </td>
   </tr>
 </table>
+
+<a href="https://muhammad-waqar-uit.github.io/SOA-Service-Oriented-Architecture-/index.html">Live View</a>
