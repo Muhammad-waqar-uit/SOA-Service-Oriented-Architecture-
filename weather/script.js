@@ -8,7 +8,7 @@ function getWeather(city){
 			document.getElementById('cityname').value="";
 		}
 	};
-	xhr.open("GET","http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=-appid-");
+	xhr.open("GET","http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=18b4f330fe04002b202faf937b3e5d1a");
 	xhr.send();
   }
 }
